@@ -1,0 +1,770 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: rgba(243, 245, 222, 0.151);
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    background:rgb(47 69 75);
+    width: 100%;
+    height: 100vh;
+    
+   
+}
+                                             /*********** Navbar ***********/
+.bloc-logo{
+    background-image: url(./assets/TaadhiilteR-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 61px;
+ }
+.navbar{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* test */
+.navbar ul li{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+
+}
+.navbar ul li:first-child{
+    color:rgb(196, 222, 235);
+}
+.navbar ul li:first-child::before{
+   content: "";
+   width: 100%;
+   height: 4px;
+   position: absolute;
+   background: rgb(196, 222, 235);
+   transform: translateY(-15px);
+}
+.navbar ul li:hover::before{
+    content: "";
+   width: 100%;
+   height: 4px;
+   position: absolute;
+   background: rgb(196, 222, 235);
+   transform: translateY(-15px);
+}
+
+/* -------------------------------------------------------- */
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 50%; */
+    padding: 10px 20px;
+   
+}
+
+.nav-items li a{
+    margin-right: 20px; 
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+                                                 /* header */
+header{
+    background-image: url(./assets/img/galerie-img1.jpg);
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+header::after{
+    content: '';
+    background: rgba(7, 6, 6, 0.582);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.citation-header{
+    width: 45%;
+    z-index: 1;
+}
+
+.citation-header h3{
+    font-size: 0.95em;
+    text-align: center;
+}
+p{
+font-size: 0.8em;
+}
+                                      /* section-galerie */
+
+.grid-galerie{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 15px;
+}
+
+.grid-galerie h2{
+    color: rgb(230, 228, 228);
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows:repeat(2,200px);
+    width: 65%;
+    justify-content: center;
+    grid-template-areas: 
+    "i1 i2 i3"
+    "i4 i5 i6";
+    gap: 15px;
+    padding: 25px;
+}
+.imgg{
+     background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    /* background-position-y: 0px top; */
+}
+.img1{
+    background-image: url(./assets/img/galerie-img2.jpg);
+    background-position: center;
+    grid-area: i1;
+}
+.img2{
+    background-image: url(./assets/img/event-img3.jpg);
+    background-position:center;
+    grid-area: i2;
+}
+.img3{
+    background-image: url(./assets/img/galerie-img1.jpg);
+    background-position: center;
+    grid-area: i3;
+}
+.img4{
+    background-image: url(./assets/img/galerie-img5.jpg);
+    background-position:center;
+    grid-area: i4;
+}
+.img5{
+    background-image: url(./assets/img/galerie-img6.jpg);
+    background-position: center;
+    grid-area: i5;
+}
+.img6{
+    background-image: url(./assets/img/galerie-img7.jpg);
+    background-position: center;
+    grid-area: i6;
+}
+
+.shadow{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px #000000;
+    transition: 0.3s;
+}
+
+.shadow:hover{
+    width: 210px;
+}
+.apropos{
+    width: 100%;
+    background: #1c3642ab;
+    
+}
+.apropos-container{
+    display: grid;
+    grid-template-columns: 12% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "a1 a2";
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    column-gap: 47px;
+    padding: 25px ;
+}
+.ac1{
+    grid-area: a1;
+}
+.ac2{
+    grid-area: a2;
+}
+.img-apropos{
+    background-image: url(./assets/TaadhiilteR-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+}
+
+.bloc-text h2{
+   font-size: 1em;
+}
+                         /* Footer */
+
+footer{
+    padding: 30px 0;
+    width: 100%;
+    background: #0000006b;
+    
+}
+
+.reseau-sociaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column-reverse;
+}
+
+.reseau-sociaux h5{
+    color: rgba(240, 237, 233, 0.644);
+    font-size: 0.7em;
+}
+.reseau-sociaux ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseau-sociaux ul li a{
+    color: inherit;
+    margin-right: 25px;
+    font-size: 1.3em;
+
+}
+
+/* *****************************Page evenement***************************** */
+ .bloc-evenement, .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.evenements, .contact-container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+     padding: 30px 25px;
+}
+.evenements h1, .benevol-title{
+   text-align: center;
+   font-size: 1.2rem;
+   letter-spacing: 1px;
+   text-transform: capitalize;
+   color: #f7b809f3;
+}
+
+.evenements .cards{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,394px);
+    grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c5 c6";
+    gap: 35px;
+    padding: 20px 0;
+    max-width: 1100px;
+} 
+
+.cards-items{
+background: linear-gradient(to bottom left, #29b0c2 40%, #f3ebc9 100%);
+border-radius: 10px 10px 0 0  ;
+  position: relative;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25)
+} 
+
+.cards-img, .benevol-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0  ;
+    height: 200px;
+    
+}
+
+.imge1{
+    background-image: url(./assets/img/image-event-initiation.jpg);
+    width: 100%;
+    grid-area: c1;
+}
+.imge2{
+    background-image: url(./assets/img/event-img1.jpg);
+    grid-area: c2;
+    width: 100%;
+}
+.imge3{
+    background-image: url(./assets/img/kids-exploring-together-nature.jpg);
+    grid-area: c3;
+    width: 100%;
+}
+.imge4{
+    background-image: url(./assets/img/event-collecte-nourriture.jpg);
+    grid-area: c4;
+    width: 100%;
+}
+.imge5{
+    background-image: url(./assets/img/galerie-event-vetement.jpg);
+    grid-area: c5;
+    width: 100%;
+}
+.imge6{
+    background-image: url(./assets/img/galerie-img5.jpg);
+    grid-area: c6;
+    width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.card-title {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: rgb(1 11 16) ;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.card-text{
+    font-weight: 200;
+    font-size: 0.7em;
+    color:  #fdfdfd;
+    line-height: 1.5;
+    padding: 5px;
+
+}
+
+.card-button{
+    position: absolute;
+     bottom: 0; 
+     padding: 0.8rem;
+     font-size: 10px;
+     text-transform: uppercase;
+     border-radius: 4px;
+     font-weight: 550; 
+     width: 80%;
+     cursor: pointer;
+     background: transparent;
+     border: none;
+     color: rgb(34, 36, 36);
+     transition: 0.2s;
+    
+}
+
+.card-button:hover{
+    font-size: 11px;
+}
+
+/* *************** carte-bénévole ****************** */
+
+.benevol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: #f7b809;
+}
+
+.benevol-containaire{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.benevol-img{
+    background-image: url(./assets/img/img-benevoles.jpg);
+    height: 300px;
+    border-radius: 10px ;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    background-position-y: -159px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benevol-text{
+      position: relative;
+}
+
+.benevol-title , .contact-title{
+    text-align: left;
+    color: #022246;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+.benevol-pagph{
+    line-height: 1.6;
+    margin-top: 40px;
+    width: 90%;
+    font-size: 0.8em;
+}
+
+.btn-benevole{
+    padding: 10px 25px;
+    border: 1px solid rgb(2, 32, 46);
+    border-radius: 15px;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #000000;
+    transition: 0.2s;
+    bottom: 0;
+    position: absolute;
+}
+
+.btn-benevole:hover{
+    background: #023f57;
+    color: white;
+} 
+
+
+              /****** Page contact ******/
+
+ .contact-container{
+    background: #c39515;
+    padding: 35px 25px;
+}
+
+.form-map{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px #666;
+    gap: 10px;
+}
+
+.map , .form{
+    width: 100%;
+    height: auto;
+}
+.map iframe{
+    width: 100%;
+    height:100%;
+    height: 55vh;
+}
+
+.form{
+    padding: 10px;
+}
+
+.input-type-text, .input-type-email ,.input-type-textarea{
+width: 100%;
+height: 40px;
+color: #000;
+border: 1px solid #bcbcbc;
+border-radius: 10px;
+outline: none;
+margin-bottom: 20px;
+padding: 15px;
+}
+
+.input-type-textarea{
+    height: 140px;  
+    resize: none;
+}
+
+.btn-form{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #07324e;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 1.05em;
+  
+}
+
+/******************  Media queries ************/
+
+/* ********page d'accueil********** */
+
+@media screen and (max-width: 858px) {
+    .img-apropos{
+        height: 58px;
+    }
+
+    /* *****page evenement => bloc benevole**** */
+    .benevol-img{
+        background-position-y: -59px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    /* ********Menu beurgeur******** */
+    .content {
+        transition: 1s;
+    }
+    
+    .bloc-logo{
+       position: absolute;
+       top: 15px;
+       right: -607px;
+       width: 50%;
+    }
+
+    .active ~ .bloc-logo{
+        display: none;
+    }
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+        justify-content:space-around;
+        align-items: flex-start;
+        padding: 0 ;
+    }
+    #side-bar{
+       position: absolute;
+       width: 230px;
+       height: 100%;
+       background: #023f57;
+       top: 0;
+       left: -230px;
+       transition: 0.5s ease-out;
+       z-index: 4;
+       display: flex;
+       align-items: flex-start;
+       padding: 0;
+    }
+
+    .btn-toggle{
+        position: absolute;
+        top: 30px; 
+         left: 240px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+    .btn-toggle span {
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+        background: #29b0c2;
+        display: block;
+        margin-top: 4px;
+        transition: 0.3s ease-out;
+
+    }
+    .navbar ul li:first-child::before{
+        background: none;
+    }
+    .navbar ul li:hover::before{
+        opacity: 0;
+        
+    }
+    .nav-items li{
+        font-size: 1.2em;  
+         padding: 15px 0 15px 10px; 
+         width: 100%;
+    }
+    .nav-items li:hover{
+        background: rgb(15, 13, 13);
+        color: white;
+        width: 100%;
+    }
+
+    .active{
+        left: 0 !important;
+    }
+
+    .active ~ .content {
+        opacity: 0.3;
+    }
+
+    .active span{
+        position: absolute;
+    }
+
+    .active span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    .active span:nth-child(2){
+        opacity: 0;
+    }
+    .active span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    /**** header**** */
+    header{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        height: 51vh;
+       
+    }
+   
+    /* ****page d'accueil =>partie galerie**** */
+
+    .grid-container{
+        grid-template-columns: repeat(2, 200px);
+    grid-template-rows:repeat(3,200px);
+    grid-template-areas: 
+    "i1 i2  "
+    "i3 i4"
+    "i5 i6";
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+    /* ***********page contact*********** */
+    .contact-title {
+        font-size: 0.9em ;
+    }
+    .form-map{
+        grid-template-columns: 1fr;
+    }
+
+    /* *********page evenement => bloc even******** */
+
+    .evenements .cards{
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: repeat(3,394px);
+        grid-template-areas: 
+    "c1 c2"
+    "c3 c4 "
+    "c5 c6"; 
+    }
+   
+}
+
+@media screen and (max-width: 620px) {
+    /******** partie-nav ********/
+    .btn-toggle span{
+        width: 40px;
+        height: 5px;
+    }
+    .bloc-logo{
+        right: -500px;
+        width: 30%;
+    }
+    h2,h3{
+        font-size: 0.9em;
+    }
+    p{
+        font-size: 0.7em;
+    }
+    /* ******page d'accueil =>partie apropos ***** */
+    .apropos-container{
+        grid-template-columns:1fr ;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "a1"
+        "a2";
+    }
+   .ac1{
+    grid-area: a1;
+    margin: 0 auto;
+   
+   }
+   .img-apropos{
+    width: 30%;
+   }
+   .ac2{
+    grid-area: a2;
+   }
+   .evenements .cards{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+"c1 "
+"c2"
+"c3"
+"c4"
+"c5"
+"c6"; 
+}
+.cards-img{
+    margin: 0 auto;
+}
+   /* *******page evenement => bloc benevol ****** */
+   .benevol-containaire{
+    grid-template-columns: 1fr;
+   }
+   .benevol-img{
+    /* width: 91%; */
+    display: none;
+}
+.benevol-text {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 auto;
+    width: 100%;
+}
+.benevol-title{
+    font-size: 0.9em;
+}
+
+.benevol-pagph{
+    margin: 8px 0 ;
+}
+.btn-benevole{
+    position: static;
+    margin: 0 auto;
+    font-size: 0.6em;
+}
+
+
+
+}
+
+@media screen and (max-width: 503px){
+    /* *******partie nav******* */
+      .bloc-logo{
+        right: -400px;
+        width: 30%;
+    }
+    /* ******partie galerie****** */
+    .grid-container{
+        grid-template-columns: 1fr;
+    grid-template-rows:repeat(6,1fr);
+    grid-template-areas: 
+    "i1"
+    "i2 "
+    "i3 "
+    "i4"
+    "i5 "
+    "i6";
+    }
+    .imgg{
+       margin: 0 auto; 
+    }
+  
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- une description du contenu de la page -->
+    <meta name="description" content="Contactez nous pour en savoir plus sur nos evenements ou une 
+    eventuel inscription.">
+    <!-- dns-prefetch ,cette balise permet de resoudre le nom du domaine  du site site en avance , ce qui 
+    optimise le temps du chargement -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar: la bar de navigation -->
+    <nav class="navbar active" id="side-bar">
+        <div class="bloc-logo"></div>
+        <div class="btn-toggle "id="btnt" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-items">
+            <li class="list-link"><a href="./index.html">Accueil</a></li>
+            <li class="list-link"><a href="./index.html">A propos</a></li>
+            <li class="list-link"><a href="./evenement.html">Evenements</a></li>
+            <li class="list-link"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- header: entete de ma page -->
+    <header class="content">
+        <div class="citation-header">
+            <h1>Le savez-vous</h1>
+            <p>Le monde se trompe.Vous croyez que c'est ce que vous garder qui vous fait riche.On vous l'a dit. Moi je
+                vous dis que c'est ce que vous donnez qui vous fais riche.</p>
+        </div>
+    </header>
+
+    <div class="contact content">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2 class="contact-title">Contactez-Nous</h2>
+                <p>Vous souhaitez assistez à l'un de nos événements ou vous s' incrire en tant que bénévole , vous
+                    pouvez
+                    nous contactez directement sur le numéro suivant: 04 94 94 00 01 oubien nous laissez un message via
+                    le
+                    formulaire si dessous:</p>
+            </div>
+            <div class="form-map">
+                <div class="map">
+                  <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.520373866175!2d6.1590907999999995!3d43.0935779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c924049efe5ac3%3A0x56e0843453cf7c25!2sA%C3%A9roport%20de%20Toulon-Hy%C3%A8res!5e0!3m2!1sfr!2sfr!4v1732161610580!5m2!1sfr!2sfr" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+                </div>
+                <div class="form">
+                      <form action="">
+                            <input type="text" name="name" id="name" placeholder="votre nom" class="input-type-text">
+                            <input type="text" name="last-name" id="last-name" placeholder="votre prénom" class="input-type-text">
+                            <input type="email" name="email" id="email" placeholder="votre adresse-email@" class="input-type-email">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Ecrire ici" class="input-type-textarea"></textarea>
+                            <input type="submit" name="submit" id="submit" class="btn-form">
+                       
+                    </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+<footer>
+    <div class="reseau-sociaux">
+        <h5>copyright © all rights reserved</h5>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+
+        </ul>
+    </div>
+</footer>
+
+</html>
