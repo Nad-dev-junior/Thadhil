@@ -1,0 +1,37 @@
+THADHILTE , est un mini site qui m' a permi de mettre en pratique les notions 
+de bases du html , css , js 
+
+***********************Ce que j'ai appris en réalisant ce projet :*******************
+
+* a debeuguer Mon code,
+* à faire des recherche en utilisant des mots clés ,
+* j' ai utilisé le ligthouse pour tester mon code ,
+* ajouter le meta description dans le head ;
+* donner un title à les iframe c' est de la bonne pratiques;
+* lire des documentations;
+* mettre ce projet sur github en procedant de la manière suivante: 
+echo "# nadidi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Nad-dev-junior/nadidi.git
+git push -u origin main
+
+*publier gratuitement sur github
+ aller sur le projet,
+ puis parametre,
+ puis pages,
+ mettre 'main' comme branch et enfin cliquez sur 'save';
+
+* ******************** La bonne pratique dans son code********************
+
+utilisé des images de types webmap;
+dans les liens google fonts mettre lattribut dns-prefetch car il permet de resoudre le nom de domaine du
+site en avance ;
+optimiser la taille de son fichier css pour charger rapidement ses pages;
+ne pas utiliser des images avec des grands format car elles réalissent le LCP ( largest contentful paint);
+
+**************************Bon à savoir****************************
+les outils CssNano ou terser pour supprimer les spaces inutiles ,les commmentaires  et pour raccourcir les propriétés css afin de réduire la taille des fichiers.
+
