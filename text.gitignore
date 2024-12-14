@@ -40,6 +40,6 @@ les outils CssNano ou terser pour supprimer les spaces inutiles ,les commmentair
 ****************************les beugs****************************************
 En responsive mobile l'ecran chevauche et il ya un espace vide a droite;
 dés qu'il est en responsive le menu beurgeur s'ouvre ,je veux qu'il reste fermé;
-quand on click sur un lien le menu beurgueur rest ouvert je veux qu'il se ferme
+quand on click sur un lien le menu beurgueur rest ouvert je veux qu'il se ferme;
 je veux que le lien ai une couleur si on es sur la page de ce dernier;
 
